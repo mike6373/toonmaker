@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation Program</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="presentation">
+        <div class="slide active" id="slide1"></div>
+    </div>
+    <div id="controls">
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+        <button id="addSlideBtn">Add Slide</button>
+        <button id="duplicateSlideBtn">Duplicate Slide</button>
+        <button id="addTextBtn">Add Text</button>
+        <button id="addImageBtn">Add Image</button>
+        <button id="addAudioBtn">Add Audio</button>
+
+    </div>
+    <input type="file" id="imageInput" style="display: none;">
+    <input type="file" id="audioInput" style="display: none;" accept="audio/*">
+    <div id="textMenu" class="menu">
+        <label for="textSizeInput">Text Size:</label>
+        <input type="number" id="textSizeInput">
+        <label for="textColor">Text Color:</label>
+        <input type="color" id="textColor">
+    </div>
+    <div id="imageMenu" class="menu">
+        <label for="imageSizeInput">Image Width:</label>
+        <input type="number" id="imageSizeInput">
+        <button id="mirrorImageBtn">Mirror Image</button>
+    </div>
+    <div id="audioMenu" class="menu">
+        <button id="recordAudioBtn">Record Audio</button>
+        <button id="stopRecordingBtn" style="display:none;">Stop Recording</button>
+    </div>
+    <div id="slideNumber"></div>
+    <script src="scripts.js"></script>
+</body>
+</html>
